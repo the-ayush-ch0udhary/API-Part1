@@ -24,6 +24,9 @@ Install the required packages.
 
 ```bash
 npm install
+npm install mongodb
+npm install express mongoose cors dotenv
+npm install nodemon --save-dev
 ```
 
 ### Step 4
@@ -100,7 +103,7 @@ Sample body:
     "title": "Complete Assignment",
     "description": "Finish Assignment 8 by today"
 }
-
+```
 
 ## Challenges Faced
 
