@@ -1,3 +1,4 @@
+
 const taskService = require("../services/taskService");
 
 // create task
@@ -26,6 +27,10 @@ const createTask = async (req, res) => {
 
     } catch (error) {
 
+        // printing actual error in terminal
+
+        console.error(error);
+
         res.status(500).json({
             message: "Something went wrong"
         });
@@ -43,6 +48,10 @@ const getAllTasks = async (req, res) => {
         res.status(200).json(tasks);
 
     } catch (error) {
+
+        // printing actual error in terminal
+
+        console.error(error);
 
         res.status(500).json({
             message: "Something went wrong"
@@ -68,6 +77,10 @@ const getTaskById = async (req, res) => {
         res.status(200).json(task);
 
     } catch (error) {
+
+        // printing actual error in terminal
+
+        console.error(error);
 
         res.status(500).json({
             message: "Something went wrong"
@@ -99,6 +112,10 @@ const updateTask = async (req, res) => {
 
     } catch (error) {
 
+        // printing actual error in terminal
+
+        console.error(error);
+
         res.status(500).json({
             message: "Something went wrong"
         });
@@ -126,6 +143,10 @@ const deleteTask = async (req, res) => {
 
     } catch (error) {
 
+        // printing actual error in terminal
+
+        console.error(error);
+
         res.status(500).json({
             message: "Something went wrong"
         });
@@ -146,11 +167,16 @@ const searchTask = async (req, res) => {
 
     } catch (error) {
 
+        // printing actual error in terminal
+
+        console.error(error);
+
         res.status(500).json({
             message: "Something went wrong"
         });
     }
 };
+
 module.exports = {
     createTask,
     getAllTasks,

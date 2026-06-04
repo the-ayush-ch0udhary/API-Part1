@@ -35,4 +35,8 @@ router.delete("/tasks/:id", deleteTask);
 
 router.get("/tasks/search/:title", searchTask);
 
+// get task by id
+
+router.get("/tasks/:id", getTaskById);
+
 module.exports = router;
